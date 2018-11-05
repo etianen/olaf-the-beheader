@@ -1,0 +1,3 @@
+[console_scripts]
+olaf-the-beheader = olaf_the_beheader.__main__:main
+

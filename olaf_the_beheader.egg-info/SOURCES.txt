@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+olaf_the_beheader/__init__.py
+olaf_the_beheader/__main__.py
+olaf_the_beheader.egg-info/PKG-INFO
+olaf_the_beheader.egg-info/SOURCES.txt
+olaf_the_beheader.egg-info/dependency_links.txt
+olaf_the_beheader.egg-info/entry_points.txt
+olaf_the_beheader.egg-info/top_level.txt

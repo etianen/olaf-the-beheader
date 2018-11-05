@@ -1,0 +1,17 @@
+.DS_Store
+.project
+.pydevproject
+.settings
+*.pyc
+*.pyo
+__pycache__
+.bzr
+.bzrignore
+Thumbs.db
+.elasticbeanstalk/
+*.esproj
+/venv
+/node_modules
+/bower_components
+.vscode
+dist
