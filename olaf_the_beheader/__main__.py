@@ -81,13 +81,14 @@ def main():
             for _ in range(args.line_count):
                 src.readline()
             # Open a temporary file for the truncated data.
-            with NamedTemporaryFile(delete=False) as dst:
+            with NamedTemporaryFile(delete=False, dir=os.path.dirname(filename)) as dst:
                 copyfileobj(src, dst)
-            # Report progress.
-            print("!", end="", flush=True)
         # Overwrite the old file with the temporary file.
+        os.unlink(filename)
         os.rename(dst.name, filename)
         time.sleep(0.01)
+        # Report progress.
+        print("!", end="", flush=True)
     # All done!
     print("")
     print("")
